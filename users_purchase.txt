@@ -1,0 +1,14 @@
+select count(user_id) 
+from page_visits
+where page_name='4 - purchase';
+
+
+
+OR
+
+
+
+
+select page_name, count(distinct user_id) 
+from page_visits
+group by 1;
